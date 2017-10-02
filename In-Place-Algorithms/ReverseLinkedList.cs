@@ -10,9 +10,6 @@ namespace In_Place_Algorithms
 {
     class ReverseLinkedList
     {
-        static void Main(string[] args)
-        {
-        }
 
         public class LinkedListNode
         {
