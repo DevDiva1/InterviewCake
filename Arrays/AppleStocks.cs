@@ -39,6 +39,11 @@ namespace Arrays
         //Time Complexit - O(n)
         public static int GetMaximumProfit(int[] stocks)
         {
+            //Edge case
+            if (stocks.Length < 2)
+            {
+                throw new ArgumentException("Input requires more than 2 items to buy and sell",nameof(stocks));
+            }
             var minPrice = stocks[0];
             var maxProfit = stocks[1] - stocks[0];
             for (var i = 1; i < stocks.Length; i++)
