@@ -9,14 +9,6 @@ namespace Arrays
 {
     class AppleStocks
     {
-        static void Main(string[] args)
-        {
-            //var maxProfit = GetMaximumProfit_BruteForce(new int[] { 10, 7, 1, 3, 11, 1 });
-            var maxProfit2 = GetMaximumProfit(new int[] { 10, 7, 1, 3, 11, 1 });
-            Console.WriteLine(maxProfit2);
-            Console.ReadKey();
-        }
-
         //Brute Force Approach
         //Time Complexity - O(n2)
         public static int GetMaximumProfit_BruteForce(int[] stocks)
