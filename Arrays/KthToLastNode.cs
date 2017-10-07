@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Arrays;
 
 namespace Arrays
 {
     class KthToLastNode
     {
-        public static MainClass.LinkedListNode FindKthToLastNode(MainClass.LinkedListNode root, int kthLastNode)
+        public static LinkedListNode FindKthToLastNode(LinkedListNode root, int kthLastNode)
         {
             if (root == null)
             {
@@ -20,7 +16,7 @@ namespace Arrays
             }
 
             var length = 1;
-            MainClass.LinkedListNode traverse = root;
+            LinkedListNode traverse = root;
             while (traverse.Next != null)
             {
                 length++;
@@ -34,5 +30,15 @@ namespace Arrays
             return traverse;
         }
         
+    }
+    public class LinkedListNode
+    {
+        public int Value { get; set; }
+        public LinkedListNode Next { get; set; }
+
+        public LinkedListNode(int value)
+        {
+            this.Value = value;
+        }
     }
 }
