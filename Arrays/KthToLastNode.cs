@@ -10,10 +10,6 @@ namespace Arrays
             {
                 throw new ArgumentNullException();
             }
-            if (kthLastNode == 1)
-            {
-                return root;
-            }
 
             var length = 1;
             LinkedListNode traverse = root;
